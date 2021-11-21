@@ -20,7 +20,7 @@ class CurrentAuctions(Spider):
             .xpath(".//div[contains(@style, 'right')]/b/text()")
             .get()
         )
-        total_results = results.removeprefix("» Results: ")  # noqa
+        total_results = results.removeprefix("» Results: ")  # noqa: F841
 
         for auction in response.css(".Auction"):
             character = auction.css(".AuctionHeader::text").get()
