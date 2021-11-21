@@ -5,11 +5,12 @@ description = ""
 authors = ["Parpinelli"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.10"
 fastapi = "^0.70.0"
 pydantic = "^1.8.2"
 Scrapy = "^2.5.1"
 uvicorn = {extras = ["standard"], version = "^0.15.0"}
+parse = "^1.19.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
